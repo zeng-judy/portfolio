@@ -1,7 +1,25 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#ffffff;
+}
+
+/* header objects styling */
+
+#name {
+    text-align: center;
+    font-size: 3em;
+    padding:0.3em;
+}
+
 #nav-bar {
     display: flex;
     flex-direction: row;
-    padding:2em;
+    padding: 2em;
+    background-color:#ffdada82;
 }
 
 .nav-button {
@@ -13,16 +31,31 @@
     text-decoration:none;
 }
 
-#name {
-    text-align: center;
-    font-size: 3em;
-    padding-top:0.3em;
+/* footer objects styling */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding:1em;
+    margin:1em;
+    background:#ffdada;
 }
+
+.footer a {
+    color: black;
+    text-decoration:underline;
+}
+
+/* elements styling */
 
 .text {
     width:60%;
     margin: auto;
     display: block;
+}
+
+.byline {
+    font-style:italic;
 }
 
 .date {
@@ -41,18 +74,14 @@ details {
     padding:0.3em;
     font-size:large;
     margin:0.4em;
-    background-color:#ececec
+    background-color:#ffffff
 }
 
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 100%;
-    background-color:#ffffff;
-}
-
+/* responsive design */
 
 @media (orientation: portrait) {
-    body {
-        display: block;
+    .text {
+        margin:auto;
+        width:100%;
     }
 }
