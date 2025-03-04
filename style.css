@@ -19,6 +19,7 @@ body {
     padding: 2em;
     box-sizing:border-box;
     background-color:#ffdada82;
+    width:100vw;
 }
 
 .nav-button {
@@ -47,7 +48,7 @@ body {
     box-sizing:border-box;
     position:absolute;
     bottom:0;
-    width:100%;
+    width:100vw;
 }
 
 .footer a {
@@ -105,10 +106,17 @@ details {
 @media (orientation: portrait) {
 
     .text {
-        width:100%;
+        width:95vw;
         margin:1em;
     }
 
+    img {
+        width:95%;
+    }
+
+    iframe {
+        width:95%;
+    }
 }
 
 .responsive {
